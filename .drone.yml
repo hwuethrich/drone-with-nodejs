@@ -8,4 +8,5 @@ pipeline:
     image: plugins/docker
     repo: quay.io/hwuethrich/drone-with-nodejs
     registry: quay.io
+    auto_tag: true
     secrets: [ docker_username, docker_password ]
