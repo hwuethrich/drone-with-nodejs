@@ -6,7 +6,7 @@ pipeline:
       - npm test
   publish:
     image: plugins/docker
-    repo: hwuethrich/drone-with-nodejs
+    repo: quay.io/hwuethrich/drone-with-nodejs
     registry: quay.io
+    auto_tag: true
     secrets: [ docker_username, docker_password ]
-    dry_run: true # remove this
